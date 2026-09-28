@@ -1,0 +1,240 @@
+/* Custom CSS for Responsive Portfolio */
+
+/* Import Google Fonts 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');*/
+
+/* Global Styles */
+body {
+    font-family: 'Baskerville Old Face', serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Custom Navbar Styling */
+.navbar {
+    background: linear-gradient(135deg, #e1aceb,#f6f0f7  100%) !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #301c36 !important;
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+    color: #301c36 !important;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #6b507c !important;
+    transform: translateY(-1px);
+}
+
+/* Hero Section Enhancement */
+.bg-primary {
+    background: linear-gradient(135deg, #f6f0f7 0%, #e1aceb 100%) !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.bg-primary::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="75" cy="75" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="50" cy="10" r="0.5" fill="rgba(255,255,255,0.1)"/><circle cx="10" cy="50" r="0.5" fill="rgba(255,255,255,0.1)"/><circle cx="90" cy="30" r="0.5" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+    opacity: 0.3;
+}
+
+.bg-primary h1 {
+    color: #301c36;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    animation: fadeInUp 1s ease-out;
+}
+
+.bg-primary p {
+    color: #301c36;
+    font-size: 1.2rem;
+    font-weight: 300;
+    animation: fadeInUp 1.2s ease-out;
+}
+
+/* About Section Styling */
+.about-section {
+    padding: 4rem 0;
+    background: #f6f0f7;
+}
+
+.about-section h2 {
+    color: #301c36;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.about-section p {
+    font-size: 1.1rem;
+    color: #1e1e1e;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.about-section .col-md-6.text-center {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.about-section img {
+    max-width: 60%;
+    width: 60%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-section img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+/* Custom Button Styles */
+.btn-custom {
+    background: linear-gradient(135deg, #e1aceb 0%, #837194 100%);
+    border: none;
+    color: rgb(77, 56, 83);
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.btn-custom:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(85, 46, 93, 0.4);
+    color: #e1aceb;
+    text-decoration: none;
+}
+
+.btn-primary {
+    background-color: #837194 !important;
+    border-color: #837194 !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active {
+    background-color: #6d5a7b !important;
+    border-color: #6d5a7b !important;
+}
+
+.form-control {
+    box-shadow: 0 0 0 0.15rem rgba(131, 113, 148, 0.2);
+    border-color: #d8c5df;
+}
+
+.form-control:focus {
+    border-color: #837194;
+    box-shadow: 0 0 0 0.25rem rgba(131, 113, 148, 0.35);
+}
+
+/* Card Styling */
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(44, 11, 59, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.skill-card {
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #eedbf1;
+    color: #301c36;
+}
+
+.card-header {
+    background: linear-gradient(135deg, #e1aceb 0%, #837194 100%);
+    color: rgb(45, 32, 44);
+    border: none;
+    padding: 1.5rem;
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .bg-primary h1 {
+        font-size: 2rem;
+    }
+
+    .bg-primary p {
+        font-size: 1rem;
+    }
+
+    .about-section {
+        padding: 2rem 0;
+    }
+
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+}
+
+footer p {
+    color: #e6caec !important;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #e1aceb 0%, #837194 100%);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #837194 0%, #e1aceb 100%);
+}
